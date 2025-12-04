@@ -17,8 +17,5 @@
       "changelog": "Made Version For Fabric 1.21.8 and Up. Plus remade from scratch.",
       "downloadUrl": "https://modrinth.com/mod/ore-genesis/version/2.0.0"
     }
-  },
-  "next_template": {
-    "changelog": "## Version {{version}}\n###  Minecraft: {{minecraft_version}}\n-"
   }
 }
