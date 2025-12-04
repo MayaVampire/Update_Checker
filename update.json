@@ -19,6 +19,6 @@
     }
   },
   "next_template": {
-    "changelog": "## 🔧 Version {{version}}\n### ✨ New Features\n- {{feature_1}}\n- {{feature_2}}\n\n### 🛠 Fixes & Improvements\n- {{fix_1}}\n- {{fix_2}}\n\n### 📦 Technical Changes\n- {{technical_change_1}}\n- {{technical_change_2}}\n\n### 🧱 Compatibility\n- Minecraft: {{minecraft_version}}\n- Loader: Fabric {{fabric_version}}"
+    "changelog": "## Version {{version}}\n###  Minecraft: {{minecraft_version}}\n-"
   }
 }
