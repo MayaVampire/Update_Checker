@@ -1,21 +1,17 @@
 {
   "homepage": "https://modrinth.com/mod/ore-genesis",
-  "promos": {
-    "1.20.1-latest": "1.0.1",
-    "1.21-latest": "2.0.0"
+  "1.21.8":{
+    "2.0.0": "Made Verson For Fabric 1.21.8 and Up. Plus remade from scratch.",
+    "2.0.1": "Added in End Variants of the Ores!!!"
+  "1.20":{
+    "1.0.0": "Back ported to Fabric 1.20.1, and more ores coming soon!!!",
+    "1.0.1": "Back ported to Fabric 1.20.1, and more ores coming soon!!!"
+  "1.21.4": {
+    "1.0.0": "Made it really fast so no idea if it works!",
   },
-  "versions": {
-    "1.0.0": {
-      "changelog": "Back ported to Fabric 1.20.1, and more ores coming soon!!!",
-      "downloadUrl": "https://modrinth.com/mod/ore-genesis/version/R9paK6RR"
-    },
-    "1.0.1": {
-      "changelog": "Back ported to Fabric 1.20.1, and more ores coming soon!!!",
-      "downloadUrl": "https://modrinth.com/mod/ore-genesis/version/mBnoyb9X"
-    },
-    "2.0.0": {
-      "changelog": "Made Version For Fabric 1.21.8 and Up. Plus remade from scratch.",
-      "downloadUrl": "https://modrinth.com/mod/ore-genesis/version/2.0.0"
-    }
-  }
+  "promos": {
+    "<1.21.8>-latest": "2.0.0",
+    "<1.20>-latest": "1.0.0",
+    "<1.21.5>-latest": "1.0.0",
+    "<1.21.4>-recommended": "1.0.0",
 }
