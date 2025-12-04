@@ -1,0 +1,29 @@
+name: Auto Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Read update.json
+        id: versionjson
+        run: |
+          TEMPLATE=$(jq -r '.next_template.changelog' update.json)
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "template<<EOF" >> $GITHUB_OUTPUT
+          echo "$TEMPLATE" | sed "s/{{version}}/$VERSION/g" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ steps.versionjson.outputs.template }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
